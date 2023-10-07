@@ -1,0 +1,279 @@
+
+/************ ABOUT PAGE **/
+.about-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90rem;
+    width: 45rem;
+
+    .card-body {
+      height: 70rem;
+      width: 100%;
+      font-size: 2rem;
+      position: relative;
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+    }
+    
+    .card-title {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      margin-bottom: 2rem;
+      height: 1%;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .card-side {
+      height: 100%;
+      width: 100%; 
+      transition: .5s all;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      border-radius: 1rem;
+
+      &_front {
+
+        .card-front-info {
+          border-radius: 2rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding: 1rem;
+          flex: 1;
+          margin: 2rem;
+          width: 85%;
+          height: 35%;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+
+          span {
+            font-weight: 700;
+            font-size: 2rem;
+          }
+          
+          h3 {
+            color: #202020;
+            font-size: 2.2rem;
+          }
+
+          p {
+            color: black;
+            text-align: left;
+            width: 100%;
+            font-size: 2rem;
+          }
+        }
+
+        .card-front-info__education {
+          background-color: #D3EDCA;
+        }
+
+        .card-front-info__job {
+          background-color: #BCDCF1;
+        }
+
+        .card-front-info__experiences {
+          background-color: #CCD2EF;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 4px;
+        }
+
+        .front {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          align-items: center;
+          height: 100%;
+          border-radius: 1rem;
+
+          .front-card-image-holder {
+            position: relative;
+            width: 95%;
+          }
+
+          .card-front-title {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            clip-path: polygon(0 0, 100% 0, 55% 100%, 0 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            min-height: 9rem;
+
+            p {
+              font-size: 1.8rem;
+              font-weight: 400;
+            }
+            h2 {
+              font-size: 2.8rem;
+              font-weight: 600;
+            }
+          }
+
+          .card-front-title__education {
+            background: linear-gradient(90deg, #4D7C11 0%, rgba(19, 30, 6, 0.68) 80.88%);
+          }
+
+          .card-front-title__job {
+            background: linear-gradient(90deg, #007AC2 0.05%, rgba(6, 64, 99, 0.90) 83.5%);
+          }
+
+          .card-front-title__experiences {
+            background: linear-gradient(90deg, #505D9F 0%, rgba(9, 21, 79, 0.75) 85.46%);
+
+          }
+          
+        }
+
+        .card-front__education {
+          background: linear-gradient(180deg, rgba(81, 131, 18, 1) 0%, rgba(44, 69, 13, 1) 46.88%, rgba(91, 142, 27, 1) 73.44%, rgba(45, 75, 7, 1) 100%);
+        }
+
+        .card-front__job {
+          background: linear-gradient(180deg, rgba(0, 122, 194, 1) 0%, rgba(29, 107, 153, 1) 33.33%, rgba(30, 141, 206, 1) 65.1%, rgba(9, 66, 99, 1) 100%);
+        }
+
+        .card-front__experiences {
+          background: linear-gradient(180deg, rgba(79, 92, 159, 1.00) 0%, rgba(79, 92, 158, 1.00) 30.21%, rgba(61, 81, 176, 1.00) 65.62%, rgba(75, 89, 153, 1.00) 100%);
+
+        }
+
+      }
+      
+
+      &_back {
+        .back {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          height: 100%;
+          border-radius: 1rem;
+          position: relative;
+        }
+
+        .card-back__education {
+          background-color: #518312;
+        }
+
+        padding: 2rem;
+        transform: rotateY(180deg);
+      }
+    }
+
+    .card-body:hover .card-side_front {
+      transform: rotateY(-180deg);
+    }
+    .card-body:hover .card-side_back {
+      transform: rotateY(0);
+    }
+
+
+    .card-back-title {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 55% 100%, 0 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      min-height: 7rem;
+
+      h2 {
+        font-size: 2.8rem;
+        font-weight: 600;
+      }
+    }
+
+    .card-back-title__education {
+      background: #518312;
+    }
+
+    .card-back-title__job {
+      background: #007AC2;
+    }
+
+    .card-back-title__experiences {
+      background: #505D9F;
+    }
+
+    .card-back-info {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .card-back-info-inner {
+        height: 90%;
+
+        .card-back-info-inner-text {
+          padding: 1.5rem;
+
+          p {
+          
+            color: white;
+            font-size: 1.8rem;
+          }
+        }
+ 
+      }
+
+    }
+
+    .card-back-info__education {
+      background-color: #406018;
+    }
+
+    .card-back-info__job {
+      background-color: #005180;
+    }
+
+    .card-back-info__experiences {
+      background-color: #37448B;
+    }
+
+
+    .card-side_back__education {
+      background-color: #518312;
+    }
+
+    .card-side_back__job {
+      background-color: #007AC2;
+    }
+
+    .card-side_back__experiences {
+      background-color: #505D9F;
+    }
+  }
+  
+ 

@@ -1,0 +1,51 @@
+nav {
+    display: flex;
+    z-index: 100;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: white;
+    border-bottom: 1.5rem #A595AE solid;
+    transition: 200ms ease all;
+
+    &:hover {
+        background-color: #A595AE;
+    }
+
+    &:hover {
+        h1 {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+    }
+
+
+    h1 {
+        flex-grow: .05;
+        font-size: 4rem;
+        color: #202020;
+        transition: 200ms ease all;
+
+        &:hover {
+            cursor: pointer;
+            color: #202020;
+            transform: scale(1.05);
+        }
+    }
+
+    h2 {
+        color: #202020;
+        font-size: 2.8rem;
+        font-weight: 400;
+        transition: 200ms ease all;
+
+        &:hover {
+            cursor: pointer;
+            color: #202020;
+            transform: scale(1.05);
+        }
+    }
+}

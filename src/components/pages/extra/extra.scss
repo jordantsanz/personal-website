@@ -1,0 +1,94 @@
+
+.skills_title {
+    color: #202020;
+    width: fit-content;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    text-align: center;
+    background-color: white;
+    padding: 0.5rem 1.75rem;
+    margin-bottom: 2rem;
+    border-radius: .625rem;
+    -webkit-box-shadow: -9px 11px 0px 0px rgb(165, 149, 174);
+    -moz-box-shadow: -9px 11px 0px 0px rgb(165, 149, 174);
+    box-shadow: -9px 11px 0px 0px rgb(165, 149, 174);
+
+    h2 {
+        font-size: 3.4rem;
+    }
+}
+    .word-skills-section {
+        margin-bottom: 2rem;
+        padding: 4rem;
+    }
+
+    .word-skills_title {
+        color: #202020;
+
+        font-family: 'Lora', serif;
+        font-weight: 600;
+        text-align: center;
+        background-color: white;
+        padding: 0.5rem 1.75rem;
+        border-radius: .625rem;
+        -webkit-box-shadow: -9px 11px 0px 0px rgb(165, 149, 174);
+        -moz-box-shadow: -9px 11px 0px 0px rgb(165, 149, 174);
+        box-shadow: -9px 11px 0px 0px rgb(165, 149, 174);
+
+        h3 {
+            font-size: 3.4rem;
+        }
+    }
+
+    .word-skills_other {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .word-skill {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .word-skill-text {
+            display: flex;
+            flex-direction: column;
+
+            p.word-skill_subtitle-big {
+                font-size: 1.8rem;
+            }
+
+            p.word-skill_subtitle-small {
+                font-size: 1.6rem;
+            }
+
+        }
+
+        &:hover {
+            transition: 200ms ease all;
+            color: #A595AE;
+        }
+
+        img {
+            width: 4rem;
+            margin-right: 2rem;
+        }
+
+        h3 {
+
+            &.word-skill_title-big {
+                font-size: 3.4rem;
+                font-weight: 600;
+            }
+
+            &.word-skill_title-small {
+                font-size: 2.8rem;
+                font-weight: 600;
+            }
+        }
+    }

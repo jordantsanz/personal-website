@@ -1,0 +1,116 @@
+
+/************ WELCOME PAGE **/
+
+.welcome-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    flex-grow: .4;
+  
+    .welcome-main {
+      font-size: 10rem;
+      font-weight: 600;
+      padding: 4rem;
+      width: 75%;
+      text-align: center;
+
+    }
+    
+    .welcome-sub {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50;
+ 
+  
+      h2 {
+        font-size: 4.8rem;
+        text-align: center;
+        font-weight: 400;
+      }
+  
+      h3 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+  
+    }
+  }
+  
+  .welcome-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+  
+    .welcome-resume {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      align-self: flex-end;
+      width: 27rem;
+      height: 19rem;
+      margin: 8rem;
+      border-radius: 2px;
+      outline: white solid 2px;
+      background-color: #A595Ae;
+      -webkit-box-shadow: 32px 29px 0px 4px rgba(255,255,255,1);
+      -moz-box-shadow: 32px 29px 0px 4px rgba(255,255,255,1);
+      box-shadow: 32px 29px 0px 4px rgba(255,255,255,1);
+
+
+    button {
+      border-radius: 2.25rem;
+      background-color: #FCFCFC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1.8125rem;
+      border: none;
+
+      font-family: "Lora", serif;
+      font-weight: 600;
+      font-size: 2.25rem;
+      transition: 100ms ease all;
+    }
+
+    button:hover {
+        background-color: #392727;
+        color: #A595Ae;
+        cursor: pointer;
+    }
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .welcome-resume_title {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #1E1E1E;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #1E1E1E;
+    }
+
+
+  }
+    
+  
