@@ -3,6 +3,9 @@ import esri from '../assets/esri.svg';
 import visa from '../assets/visa.svg';
 import quiz from '../assets/quiz.gif';
 import matrix from '../assets/matrix.jpg';
+import lasagna from '../assets/lasagnaLove.png';
+import gmcw from '../assets/gmcw.png';
+import volleyball from '../assets/vball.png';
 
 export const navbarTitles = {
   WELCOME: 'Jordan Sanz',
@@ -19,7 +22,35 @@ export const aboutEducationCard = {
     title: 'Dartmouth College',
     img: dartmouth,
   },
-  backBody: 'Computer Science Majors',
+  backBody: {
+    title: 'Other experiences',
+    bullets: [
+      {
+        bolded: "Thesis: ",
+        text: "Improving music education with biofeedback-based cognitive tutoring. 2022",
+      },
+      {
+        bolded: "Sigma Nu Fraternity: ",
+        text: "President, Head of Honor Board, Recruitment Chair. 2019-2022",
+      },
+      {
+        bolded: "Dartmouth Dodecs A Capella: ",
+        text: "Business Manager, Beatboxer. 2018-2022"
+      },
+      {
+        bolded: "Undergraduate Advisor",
+        text: " for first-year students. 2019-2020"
+      },
+      {
+        bolded: "Teaching Assistant ",
+        text: "for multiple computer science undergraduate (and one computer science graduate) courses. 2019-2022"
+      },
+      {
+        bolded: "RWIT Writing Assistant ",
+        text: "for undergraduates, Head of Education and Outreach. 2019-2022"
+      }
+  ]
+  },
   img: 'sdf',
 };
 
@@ -31,7 +62,23 @@ export const aboutCurrentJobCard = {
     title: 'Esri',
     img: esri,
   },
-  backBody: 'Software Developer',
+  backBody: {
+    title: 'Accomplishments',
+    bullets: [
+      {
+        bolded: "Scrum Master ",
+        text: "for my thread, leading an Agile environment and resulting in consecutive passing sprints immediately."
+      },
+      {
+        bolded: "DevSummit 2023: ",
+        text: "Presenter of “Deep Customization of Sites” at annual developer-focused conference "
+      },
+      {
+        bolded: "Worked directly with the CTO ",
+        text: "on AI prototypes, helping to lead the company in AI"
+      }
+    ]
+  },
   img: 'sdf',
 };
 
@@ -43,7 +90,23 @@ export const aboutPastExperiencesCard = {
     title: 'Visa and UBDI',
     img: visa,
   },
-  backBody: 'Software Developer',
+  backBody: {
+    title: 'Achievements',
+    bullets: [
+      {
+        bolded: "Developed notification system ",
+        text: "for high-impact case management platform."
+      },
+      {
+        bolded: "Architected, planned, and implemented ",
+        text: "the entire project, developing 17 notification use cases and implemented the UI, REST API, and SQL database within an agile environment"
+      },
+      {
+        bolded: "Built React.js web application  ",
+        text: "that helps users monetize their own data, constructing queries with GraphQL"
+      }
+    ]
+  },
   img: 'sldkf',
 };
 
@@ -62,6 +125,7 @@ export const WarblerProject = {
   subtitle: "Music education web application",
   notes: "Personal nonprofit project to help teachers during COVID-19",
   image: "https://media.giphy.com/media/LT6SBHsF0i8gVzg95A/giphy.gif",
+  link: "https://warblermusic.com/",
 }
 
 
@@ -99,4 +163,31 @@ export const QuizProject = {
   notes: "A personal favorite and early on in my CS journey",
   image: quiz,
   link: "https://dartmouth-cs52-20x.github.io/lab2-quizzical-jordantsanz/index.html",
+}
+
+export const LasagnaLove = {
+  id: "LasagnaLove",
+  url: lasagna,
+  caption: "Lasagna Love",
+  bolded: "Volunteer as a Software Engineer",
+  description: "for Lasagna Love, an international organization delivering food to families in need",
+  href: "https://lasagnalove.org/",
+}
+
+export const Singing = {
+  id: "Sing",
+  url: gmcw,
+  caption: "GMCW",
+  bolded: "Sing often and love it:",
+  description: "I formerly participated in the Gay Men's Chorus of Washington, DC and was the beatboxer for Dartmouth Dodecaphonics A Cappella",
+  href: "https://www.gmcw.org/",
+}
+
+export const BeachVolleyball = {
+  id: "BeachVolleyball",
+  url: volleyball,
+  caption: "Having fun!",
+  bolded: "Play beach volleyball",
+  description: "with my friends on the National Mall -- I'm brushing up on my tennis skills, too!",
+  href: "https://www.recreation.gov/",
 }

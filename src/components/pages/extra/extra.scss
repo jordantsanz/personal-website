@@ -1,4 +1,113 @@
 
+.extra-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.extra-section_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.extra-section_right {
+    background-color: rgba(165, 149, 174, 0.19); 
+    border-radius: 4px;
+    height: 100%;
+
+    .word-skills-section {
+        transition: 200ms ease all;
+        margin-bottom: 0;
+        &:hover {
+            background-color: rgba(165, 149, 174, 0.35);
+            box-shadow: -9px 11px 0px 0px rgba(165, 149, 174, .2); 
+        }
+
+        .word-skill-text {
+            margin: 2rem;
+        }
+        
+    }
+}
+.extra-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(165, 149, 174, 0.19); 
+    width: 100%;
+    color: white;
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: 4px;
+    transition: 200ms ease all;
+
+    // box-shadow: -9px 11px 0px 0px rgb(165, 149, 174);
+
+
+    figure {
+        position: relative;
+        width: 85%;;
+        background-color: rgb(165, 149, 174);
+        height: 100%;
+        min-height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 20px;
+        margin: 2rem;
+        
+        img {
+            width: 100%;
+            transition: 200ms ease all;
+        }
+
+        figcaption {
+            position: absolute;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: 150ms ease all;
+            font-weight: 700;
+            color: white;
+            font-size: 3.5rem;
+        }
+
+        
+    }
+
+    p {
+        font-size: 2.8rem;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &:hover {
+        background-color: rgba(165, 149, 174, 0.35);
+        box-shadow: -9px 11px 0px 0px rgba(165, 149, 174, .2); 
+
+        figure {
+            
+            img {
+                filter: blur(8px);
+                opacity: .6;
+               
+            }
+            figcaption {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+
 .skills_title {
     color: #202020;
     width: fit-content;
@@ -49,6 +158,9 @@
         justify-content: space-around;
     }
 
+
+
+
     .word-skill {
         display: flex;
         flex-direction: row;
@@ -60,11 +172,11 @@
             flex-direction: column;
 
             p.word-skill_subtitle-big {
-                font-size: 1.8rem;
+                font-size: 2.4rem;
             }
 
             p.word-skill_subtitle-small {
-                font-size: 1.6rem;
+                font-size: 2.2rem;
             }
 
         }

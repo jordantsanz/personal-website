@@ -1,7 +1,6 @@
 import Page from './components/pages/Pages';
 import pageNames from './lib/components';
 import NavBar from './components/common/NavBar';
-import './App.css';
 
 function App() {
   return (

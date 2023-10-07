@@ -7,7 +7,7 @@ import PageTitle from '../../common/pageTitle';
 function About() {
   return (
     <>
-    <PageTitle title="At a glance" caption="Mouse over a card to see more!"/>
+    <PageTitle id="about" title="At a glance" caption="Mouse over a card to see more!"/>
       <div className="about-cards">
         <Card cardInfo={aboutEducationCard} />
         <Card cardInfo={aboutCurrentJobCard} />

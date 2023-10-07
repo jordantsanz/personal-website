@@ -217,7 +217,7 @@
                     }
 
                     p.word-skill_subtitle-small {
-                        font-size: 2rem;
+                        font-size: 2.4rem;
                     }
 
                 }
@@ -256,4 +256,19 @@
         align-items: center;
         justify-content: center;
     }
+}
+
+.skills_subtitle {
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+.skills_title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
 }

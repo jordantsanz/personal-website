@@ -7,7 +7,7 @@ import PageTitle from '../../common/pageTitle';
 function Skills() {
   return (
     <>
-    <PageTitle title="Skills and technologies" />
+    <PageTitle id="skills" title="Skills and technologies" />
     <div className="skills-page">
       <div className="skills-middle">
         <TechSkills />

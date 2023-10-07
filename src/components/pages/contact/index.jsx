@@ -9,10 +9,10 @@ import NextArrow from '../../common/nextarrow';
 function Contact() {
   return (
     <>
-    <PageTitle title="Get in touch"/>
+    <PageTitle id="contact" title="Get in touch"/>
       <div className="contact-middle">
           <div className="contact-container" id="email">
-              <a href="mailto:jordan.t.sanz.22@dartmouth.edu" className="contact-link">
+              <a href="mailto:jtsanz19@gmail.com" className="contact-link">
                   <img className="social" id="email" src={mail} />
               </a>
           </div>

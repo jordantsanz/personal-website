@@ -237,12 +237,33 @@
         height: 90%;
 
         .card-back-info-inner-text {
-          padding: 1.5rem;
+          padding: 3rem;
+          height: 90%;
 
-          p {
-          
+          ul {
+            list-style: "👉";
+            padding-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+          }
+
+          li {
+            padding-left: 1rem;
             color: white;
-            font-size: 1.8rem;
+            font-size: 3rem;
+
+            span {
+              font-size: 2.6rem;
+              font-weight: 700;
+            }
+            p {
+              font-size: 1.8rem;
+              font-weight: regular;
+            }
+
           }
         }
  

@@ -52,10 +52,13 @@ function Project({ id, featured, title, subtitle, notes, image, link, refCallbac
   }
   
   return (
-    <div id={`project-${id}`} ref={refCallback} className="project-block" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-      <div role="img" href={link} className='project-image' style={{backgroundImage: `url(${image})` }}/>
-        {featured ? getFeaturedText() :  getRegularText()}
-    </div>
+    <a href={link} target="_blank" rel="noreferrer">
+      <div id={`project-${id}`} ref={refCallback} className="project-block" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+        <div role="img" className='project-image' style={{backgroundImage: `url(${image})` }}/>
+          {featured ? getFeaturedText() :  getRegularText()}
+      </div>
+    </a>
+
   );
 }
 
