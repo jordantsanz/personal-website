@@ -1,4 +1,4 @@
-function Project({ id, featured, title, subtitle, notes, image, link }) {
+function Project({ id, featured, title, subtitle, notes, image, link, refCallback, refs = [] }) {
 
   const getFeaturedText = () => {
     return (
@@ -31,15 +31,28 @@ function Project({ id, featured, title, subtitle, notes, image, link }) {
     }[id];
     document.documentElement.style.setProperty('--accent-color', colors.color);
     document.documentElement.style.setProperty('--accent-hover-color', colors.hover);
+    console.log('refs: ', refs);
+    refs?.forEach((ref) => {
+      if (ref?.current?.id && ref?.current?.id !== `project-${id}`) {
+        ref.current.style.opacity = 0.25;
+      }
+    })
   }
 
   const handleMouseOut = () => {
     document.documentElement.style.setProperty('--accent-color', "rgba(5, 28, 44, 0.97)");
     document.documentElement.style.setProperty('--accent-hover-color', "rgba(5, 28, 44, 0.85)");
+
+    refs?.forEach((ref) => {
+      
+      if (ref?.current?.id && ref?.current?.id !== `project-${id}`) {
+        ref.current.style.opacity = 1;
+      }
+    })
   }
   
   return (
-    <div className="project-block" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+    <div id={`project-${id}`} ref={refCallback} className="project-block" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
       <div role="img" href={link} className='project-image' style={{backgroundImage: `url(${image})` }}/>
         {featured ? getFeaturedText() :  getRegularText()}
     </div>
