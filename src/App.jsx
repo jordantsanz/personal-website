@@ -1,6 +1,6 @@
 import Page from './components/pages/Pages';
 import pageNames from './lib/components';
-import NavBar from './components/common/NavBar';
+import NavBar from './components/common/navbar';
 
 function App() {
   return (
