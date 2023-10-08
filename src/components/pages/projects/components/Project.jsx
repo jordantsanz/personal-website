@@ -31,7 +31,6 @@ function Project({ id, featured, title, subtitle, notes, image, link, refCallbac
     }[id];
     document.documentElement.style.setProperty('--accent-color', colors.color);
     document.documentElement.style.setProperty('--accent-hover-color', colors.hover);
-    console.log('refs: ', refs);
     refs?.forEach((ref) => {
       if (ref?.current?.id && ref?.current?.id !== `project-${id}`) {
         ref.current.style.opacity = 0.25;

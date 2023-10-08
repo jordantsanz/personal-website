@@ -3,9 +3,9 @@
 const CardSideBack = ({ cardType, sideInfo }) => {
 
     const getBulletPoints = () => {
-        return sideInfo?.bullets?.map((point) => {
+        return sideInfo?.bullets?.map((point, i) => {
             return (
-                <li key="0">
+                <li key={i}>
                     {/* <img src={react} className="back-bullet-point" /> */}
                     <p><span>{point.bolded}</span>{point.text}</p>
                 </li>

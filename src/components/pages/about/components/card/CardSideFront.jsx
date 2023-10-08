@@ -1,5 +1,4 @@
 const CardSideFront = ({ sideInfo, cardType }) => {
-    console.log(sideInfo, cardType);
     return (
         <div className="card-side card-side_front">
             <div className={`front card-front__${cardType}`}>
