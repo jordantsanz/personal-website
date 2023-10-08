@@ -204,3 +204,24 @@
             }
         }
     }
+
+@media only screen and (max-width: 900px) {
+    .extra-section {
+        width: 100%;
+        flex-direction: column;
+
+        .extra-section_left {
+            width: 100%;
+
+            .extra-group {
+                flex-direction: column;
+                width: auto;
+
+                figure {
+                    min-height: auto;
+                    max-width: 20rem;
+                }
+            }
+        }
+    }
+}

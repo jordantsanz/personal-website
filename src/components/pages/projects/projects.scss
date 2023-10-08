@@ -192,3 +192,32 @@
 
 
 }
+
+@media only screen and (max-width: 900px) {
+    .projects-middle {
+        .projects-featured {
+            .project-block {
+                flex-direction: column;
+                margin: 2rem;
+
+                .project-image {
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 3rem;
+                }
+
+                .project-text-featured {
+                    width: 100%;
+                }
+            }
+        }
+
+        .projects-other {
+            flex-direction: column;
+
+            .project-block {
+                width: auto;
+            }
+        }
+    }
+}

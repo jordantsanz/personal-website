@@ -297,4 +297,27 @@
     }
   }
   
+
+@media only screen and (max-width: 900px) {
+  .about-cards {
+    flex-direction: column;
+
+    .about-card {
+      height: 100rem;
+      
+      .card-body {
+      height: 80rem;
+    
+
+    .card-side_back {
+      box-sizing: border-box;
+
+      .card-back-info {
+     
+      }
+    }
+  }
+}
+}
+}
  

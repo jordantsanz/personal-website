@@ -42,3 +42,21 @@
     margin-top: 2rem;
     text-align: center;
 }
+
+@media only screen and (max-width: 900px) {
+    .contact-middle {
+        flex-direction: column;
+    }
+
+    .contact-submiddle {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+    
+            font-size: 2rem;
+        } 
+    }
+}

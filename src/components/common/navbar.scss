@@ -49,3 +49,11 @@ nav {
         }
     }
 }
+
+@media only screen and (max-width: 900px) {
+    nav {
+        h2 {
+            display: none;
+        }
+    }
+}

@@ -273,7 +273,7 @@ export const mongoSkill = {
  }
 
  export const awsSkill = {
-    title: "Amazon Web Services",
+    title: "AWS",
     image: aws,
     href: "https://aws.amazon.com/"
  }

@@ -131,7 +131,7 @@
                     transition: 200ms ease all;
                   
                     &:hover {
-                        
+                        cursor: pointer;
                         transform: scale(1.1);
                         animation: none;
                     }
@@ -271,4 +271,60 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .skills-page {
+        height: auto;
+
+    }
+    .skills-page .skills-middle {
+        flex-direction: column;
+
+        .tech-skills {
+            width: 100%;
+            height: auto;
+        }
+
+        .tech-skills_main {
+            grid-template-columns: 1fr 1fr;
+            height: auto;
+        }
+
+        .tech-skills_other {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: auto;
+
+            .tech-skill {
+                grid-column: auto / span 1;
+            }
+        }
+
+        .word-skills {
+            width: 100%;
+
+            .word-skill {
+
+                .word-skill-text {
+                    margin: 1rem;
+                    
+                    h3.word-skill_title-big {
+                        font-size: 2.8rem;
+                    }
+    
+                    p.word-skill_subtitle-big {
+                        font-size: 2rem;
+                    }
+                }
+
+
+            }
+
+
+        }
+
+     
+    }
 }
