@@ -7,6 +7,20 @@ import lasagna from '../assets/lasagnaLove.png';
 import gmcw from '../assets/gmcw.png';
 import volleyball from '../assets/vball.png';
 
+import react from '../assets/react.svg';
+import typescript from '../assets/typescript.svg';
+import javascript from '../assets/javascript.svg';
+import node from '../assets/nodejs-icon.svg';
+import python from '../assets/python.svg';
+import css from '../assets/css.svg';
+import html from  '../assets/html.svg';
+import express from '../assets/expressjs-icon.svg';
+import mongo from '../assets/mongodb.svg';
+import java from '../assets/java.svg';
+import csharp from '../assets/csharp.svg';
+import aws from '../assets/awsElastic.svg';
+import azure from '../assets/azure.svg';
+
 export const navbarTitles = {
   WELCOME: 'Jordan Sanz',
   ABOUT: 'About',
@@ -191,3 +205,81 @@ export const BeachVolleyball = {
   description: "with my friends on the National Mall -- I'm brushing up on my tennis skills, too!",
   href: "https://www.recreation.gov/",
 }
+
+export const reactSkill = {
+  title: "React",
+  image: react,
+  href: "https://react.dev/"
+}
+
+export const typescriptSkill = {
+  title: "TypeScript",
+  image: typescript,
+  href: "https://www.typescriptlang.org/"
+}
+
+export const javascriptSkill = {
+  title: "JavaScript",
+  image: javascript,
+  href: "https://www.javascript.com/"
+}
+
+export const nodeSkill = {
+  title: "Node.js",
+  image: node,
+  href: "https://nodejs.org/en"
+}
+
+export const pythonSkill = {
+  title: "Python",
+  image: python,
+  href: "https://www.python.org/"
+}
+
+export const cssSkill = {
+  title: "CSS",
+  image: css,
+  href: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+}
+
+export const htmlSkill = {
+  title: "HTML",
+  image: html,
+  href: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+}
+
+export const expressSkill = {
+  title: "Express.js",
+  image: express,
+  href: "https://expressjs.com/"
+}
+
+export const mongoSkill = {
+  title: "MongoDB",
+  image: mongo,
+  href: "https://www.mongodb.com/"
+}
+
+ export const javaSkill = {
+    title: "Java",
+    image: java,
+    href: "https://www.java.com/en/"
+ }
+
+ export const csharpSkill = {
+    title: "C#",
+    image: csharp,
+    href: "https://learn.microsoft.com/en-us/dotnet/csharp/"
+ }
+
+ export const awsSkill = {
+    title: "Amazon Web Services",
+    image: aws,
+    href: "https://aws.amazon.com/"
+ }
+
+ export const azureSkill = {
+    title: "Microsoft Azure",
+    image: azure,
+    href: "https://azure.microsoft.com/"
+ }

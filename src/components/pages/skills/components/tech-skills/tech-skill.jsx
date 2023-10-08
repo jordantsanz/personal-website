@@ -1,6 +1,6 @@
 import react from '../../../../../assets/react.svg';
 
-function TechSkill({ title, image, size }) {
+function TechSkill({ href, title, image, size }) {
   const getUnderlineColor = () => {
     return {
       "React": "#61DAFB",
@@ -18,11 +18,16 @@ function TechSkill({ title, image, size }) {
       "Microsoft Azure": "#0089D6",
     }[title] || "#A595AE";
   }
+
+  const openLink = () => {
+    window.open(href);
+  }
   return (
-    <div className="tech-skill">
-      <img className={`tech-skill_image tech-skill-${size}`} src={image || react} />
-      <h3 style={{"--underlineColor": getUnderlineColor()}} className={`tech-skill_title tech-skill-title-${size}`}>{title}</h3>
-    </div>
+      <div role="button" onClick={openLink} className="tech-skill">
+        <img className={`tech-skill_image tech-skill-${size}`} src={image || react} />
+        <h3 style={{"--underlineColor": getUnderlineColor()}} className={`tech-skill_title tech-skill-title-${size}`}>{title}</h3>
+      </div>
+
   );
 }
 
