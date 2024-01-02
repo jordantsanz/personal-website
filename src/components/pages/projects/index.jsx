@@ -15,7 +15,7 @@ function Projects() {
 
   return (
     <div className='projects-page'>
-    <PageTitle id="projects" title="Projects & publications" />
+    <PageTitle id="projects" title="Publications & projects" />
       <div className="projects-middle">
         <div className='projects-featured'>
           <Project 
