@@ -1,4 +1,5 @@
 import dartmouth from '../assets/dartmouth.svg';
+import beli from '../assets/beliapp-logo.webp';
 import esri from '../assets/esri.svg';
 import visa from '../assets/visa.svg';
 import quiz from '../assets/quiz.gif';
@@ -14,10 +15,10 @@ import node from '../assets/nodejs-icon.svg';
 import python from '../assets/python.svg';
 import css from '../assets/css.svg';
 import html from  '../assets/html.svg';
-import express from '../assets/expressjs-icon.svg';
+import angular from '../assets/angular.png';
 import mongo from '../assets/mongodb.svg';
 import java from '../assets/java.svg';
-import csharp from '../assets/csharp.svg';
+import gcp from '../assets/gcp.png';
 import aws from '../assets/awsElastic.svg';
 import azure from '../assets/azure.svg';
 
@@ -35,6 +36,11 @@ export const aboutEducationCard = {
     year: '2018-2022',
     title: 'Dartmouth College',
     img: dartmouth,
+    headline: 'Undergraduate of Dartmouth College, 2022.',
+    details: [
+      { label: 'Majors', value: 'Computer Science and Quantitative Social Science' },
+      { label: 'Awards', value: 'Cum Laude, High Honors in Quantitative Social Science' },
+    ],
   },
   backBody: {
     title: 'Other experiences',
@@ -72,24 +78,29 @@ export const aboutCurrentJobCard = {
   title: 'Current employment',
   cardType: 'job',
   frontBody: {
-    year: '2022-Present',
-    title: 'Esri',
-    img: esri,
+    year: '2025-Present',
+    title: 'Beli',
+    img: beli,
+    headline: 'Software Engineer at Beli (Founding Team)',
+    details: [
+      { label: 'Role', value: 'Full Stack + Machine Learning' },
+      { label: 'Press', value: 'Featured in NYT, WSJ, Forbes' },
+    ],
   },
   backBody: {
     title: 'Accomplishments',
     bullets: [
       {
-        bolded: "Scrum Master ",
-        text: "for my thread, leading an Agile environment and resulting in consecutive passing sprints immediately."
+        bolded: "Architected a real-time recommendation engine ",
+        text: "scoring 100k+ businesses per request with <1.5s latency using PySpark, Django, and Cloud Run"
       },
       {
-        bolded: "DevSummit 2023: ",
-        text: "Presenter of “Deep Customization of Sites” at annual developer-focused conference "
+        bolded: "Built a photo-quality scoring pipeline ",
+        text: "processing 30k images/day using CLIP, EasyOCR, and computer vision heuristics"
       },
       {
-        bolded: "Worked directly with the CTO ",
-        text: "on AI prototypes, helping to lead the company in AI"
+        bolded: "Implemented push notification system ",
+        text: "delivering millions of messages per week on optimized schedules via Cloud Tasks"
       }
     ]
   },
@@ -100,24 +111,29 @@ export const aboutPastExperiencesCard = {
   title: 'Past work experiences',
   cardType: 'experiences',
   frontBody: {
-    year: '2020-2021',
-    title: 'Visa and UBDI',
-    img: visa,
+    year: '2020-2024',
+    title: 'Esri and Visa',
+    img: esri,
+    headline: 'Software Engineer at Esri & Visa',
+    details: [
+      { label: 'Esri', value: 'Software Engineer, Scrum Master (2022-2024)' },
+      { label: 'Visa', value: 'Software Engineer Intern (2021)' },
+    ],
   },
   backBody: {
     title: 'Achievements',
     bullets: [
       {
-        bolded: "Developed notification system ",
-        text: "for high-impact case management platform."
+        bolded: "Esri (2022-2024): ",
+        text: "Scrum Master, DevSummit 2023 presenter, worked with CTO on AI prototypes"
       },
       {
-        bolded: "Architected, planned, and implemented ",
-        text: "the entire project, developing 17 notification use cases and implemented the UI, REST API, and SQL database within an agile environment"
+        bolded: "Visa (2021): ",
+        text: "Developed notification system for case management platform with 17 use cases"
       },
       {
-        bolded: "Built React.js web application  ",
-        text: "that helps users monetize their own data, constructing queries with GraphQL"
+        bolded: "UBDI (2020): ",
+        text: "Built React.js web application with GraphQL to help users monetize their data"
       }
     ]
   },
@@ -248,10 +264,10 @@ export const htmlSkill = {
   href: "https://developer.mozilla.org/en-US/docs/Web/HTML"
 }
 
-export const expressSkill = {
-  title: "Express.js",
-  image: express,
-  href: "https://expressjs.com/"
+export const angularSkill = {
+  title: "Angular",
+  image: angular,
+  href: "https://angular.io/"
 }
 
 export const mongoSkill = {
@@ -266,10 +282,10 @@ export const mongoSkill = {
     href: "https://www.java.com/en/"
  }
 
- export const csharpSkill = {
-    title: "C#",
-    image: csharp,
-    href: "https://learn.microsoft.com/en-us/dotnet/csharp/"
+ export const gcpSkill = {
+    title: "GCP",
+    image: gcp,
+    href: "https://cloud.google.com/"
  }
 
  export const awsSkill = {

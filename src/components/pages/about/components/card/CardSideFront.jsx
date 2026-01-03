@@ -11,12 +11,11 @@ const CardSideFront = ({ sideInfo, cardType }) => {
                 </div>
 
                 <div className={`card-front-info card-front-info__${cardType}`}>
-                    <h3>Undergraduate of Dartmouth College, 2022.</h3>
-                    <p><span>Majors:</span> Computer Science and Quantitiative Social Science</p>
-                    <p><span>Awards:</span> Cum Laude, High Honors in Quantitative Social Science, Academic Excellence Citation in COSC 52: Full-Stack Web Development</p>
+                    <h3>{sideInfo.headline}</h3>
+                    {sideInfo.details?.map((detail, index) => (
+                        <p key={index}><span>{detail.label}:</span> {detail.value}</p>
+                    ))}
                 </div>
-                {/* <div className="front-title">{sideInfo?.title}</div>
-                <div className="front-image">{sideInfo?.img}</div> */}
             </div>
         </div>
     )

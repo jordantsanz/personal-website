@@ -1,7 +1,7 @@
 import SkillsTitle from '../skillsTitle';
 import TechSkill from './tech-skill';
 
-import { awsSkill, azureSkill, csharpSkill, cssSkill, expressSkill, htmlSkill, javaSkill, javascriptSkill, mongoSkill, nodeSkill, pythonSkill, reactSkill, typescriptSkill } from '../../../../../lib/strings';
+import { awsSkill, azureSkill, gcpSkill, cssSkill, angularSkill, htmlSkill, javaSkill, javascriptSkill, mongoSkill, nodeSkill, pythonSkill, reactSkill, typescriptSkill } from '../../../../../lib/strings';
 
 function TechSkills() {
   return (
@@ -15,12 +15,12 @@ function TechSkills() {
         <TechSkill size="big" {...pythonSkill} />
         <TechSkill size="big" {...cssSkill} />
         <TechSkill size="big" {...htmlSkill} />
-        <TechSkill size="big" {...expressSkill} />
+        <TechSkill size="big" {...angularSkill} />
       </div>
       <div className="tech-skills_other">
         <TechSkill size="small" {...mongoSkill} />
         <TechSkill size="small" {...javaSkill} />
-        <TechSkill size="small" {...csharpSkill} />
+        <TechSkill size="small" {...gcpSkill} />
         <TechSkill size="small" {...awsSkill} />
         <TechSkill size="small" {...azureSkill} />
       </div>

@@ -10,11 +10,11 @@ function TechSkill({ href, title, image, size }) {
       "Python": "#FFD43B",
       "CSS": "#1572B6",
       "HTML": "#E34F26",
-      "Express.js": "#000000",
+      "Angular": "#DD0031",
       "MongoDB": "#47A248",
       "Java": "#007396",
-      "C#": "#A179DC",
-      "Amazon Web Services": "#FF9900",
+      "GCP": "#4285F4",
+      "AWS": "#FF9900",
       "Microsoft Azure": "#0089D6",
     }[title] || "#A595AE";
   }

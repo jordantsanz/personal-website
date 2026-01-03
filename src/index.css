@@ -70,3 +70,14 @@ a:visited { text-decoration: none; color: inherit; }
 a:hover { text-decoration: none; color:inherit; }
 a:focus { text-decoration: none; color:inherit; }
 a:hover, a:active { text-decoration: none; color:inherit }
+
+.global-video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}

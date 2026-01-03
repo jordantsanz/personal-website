@@ -99,6 +99,9 @@
 
         img {
           width: 100%;
+          height: auto;
+          max-height: 35rem;
+          object-fit: contain;
           border-radius: 4px;
         }
 
