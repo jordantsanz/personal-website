@@ -1,7 +1,6 @@
 import dartmouth from '../assets/dartmouth.svg';
 import beli from '../assets/beliapp-logo.webp';
 import esri from '../assets/esri.svg';
-import visa from '../assets/visa.svg';
 import quiz from '../assets/quiz.gif';
 import matrix from '../assets/matrix.jpg';
 import lasagna from '../assets/lasagnaLove.png';
@@ -75,13 +74,13 @@ export const aboutEducationCard = {
 };
 
 export const aboutCurrentJobCard = {
-  title: 'Current employment',
+  title: 'Most recently',
   cardType: 'job',
   frontBody: {
-    year: '2025-Present',
+    year: '2025-2026',
     title: 'Beli',
     img: beli,
-    headline: 'Software Engineer at Beli (Founding Team)',
+    headline: 'Software Engineer at Beli (3rd Employee/Engineer)',
     details: [
       { label: 'Role', value: 'Full Stack + Machine Learning' },
       { label: 'Press', value: 'Featured in NYT, WSJ, Forbes' },
@@ -111,7 +110,7 @@ export const aboutPastExperiencesCard = {
   title: 'Past work experiences',
   cardType: 'experiences',
   frontBody: {
-    year: '2020-2024',
+    year: '2020-2025',
     title: 'Esri and Visa',
     img: esri,
     headline: 'Software Engineer at Esri & Visa',
@@ -124,7 +123,7 @@ export const aboutPastExperiencesCard = {
     title: 'Achievements',
     bullets: [
       {
-        bolded: "Esri (2022-2024): ",
+        bolded: "Esri (2022-2025): ",
         text: "Scrum Master, DevSummit 2023 presenter, worked with CTO on AI prototypes"
       },
       {
